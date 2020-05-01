@@ -11,9 +11,9 @@ class PagesController extends Controller
         return view('home', ['judul' => $judul]);
     }
 
-    public function about(){
+    public function about($nilai = "Kosong"){
         $judul = 'Home';
-        return view('about', ['judul' => $judul]);
+        return view('about', ['judul' => $judul, 'nilai' => $nilai]);
     }
 
     public function mahasiswa(){
